@@ -17,9 +17,7 @@
 
 |参数|解释|example|
 |---|---|---|
-|value|缓存的名称，在 spring 配置文件中定义，必须指定至少一个|例如: 
-@Cacheable(value=”mycache”) 
-@Cacheable(value={”cache1”,”cache2”}|
+|value|缓存的名称，在 spring 配置文件中定义，必须指定至少一个|例如: @Cacheable(value=”mycache”) @Cacheable(value={”cache1”,”cache2”}|
 
 |key|缓存的 key，可以为空，如果指定要按照 SpEL 表达式编写，如果不指定，则缺省按照方法的所有参数进行组合|@Cacheable(value=”testcache”,key=”#userName”)|
 
